@@ -20,7 +20,7 @@ p#id-selector-2 {
     color: blue;
 }
 body {
-    background-color: black;
+    background-color: white;
 }
 .fg-color-black { color: black; }
 .fg-color-white { color: white; }
@@ -55,6 +55,12 @@ body {
 }
 .bg-color-darkgrey {
     background-color: darkgrey;
+}
+.bg-color-lightgrey {
+    background-color: lightgrey;
+}
+.bg-color-twitter-lightgrey {
+    background-color: rgb(225 232 237);
 }
 .border-fat {
     border-width: 20px 30px 20px 30px; }
@@ -105,8 +111,9 @@ body {
     margin-right: 50px;
 }
 .margin-left {
-    margin-left: 16px;
+    margin-left: 35px;
 }
+
 
 .margin-all-around {
     margin: 30px;
