@@ -23,7 +23,7 @@ function exploreComponent() {
    <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 bg-darklyh">
    <h5><b>Who To follow</b>
    </h5>
-    ${WhoToFollowList()}
+    ${PostSummaryList()}
     
    </div>
   </div>
