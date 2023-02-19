@@ -5,7 +5,7 @@ export default  [
         profilePic: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Elon_Musk_Brazil_2022.png/1200px-Elon_Musk_Brazil_2022.png",
         tweet: "Amazing show about inspiration4x mission",
         postDate: "2023/5/13",
-        postText: "Herka derka burka burka",
+        postText: "Going to send myself to Mars lol",
         postImage: "https://www.digitaltrends.com/wp-content/uploads/2017/08/spacex-space-suit.jpg?p=1",
         postImageTitle: "Countdown: Inspirationa4 Mission to Space | Netflix Official Site",
         postImageText: "From training to landing this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...",
@@ -16,7 +16,7 @@ export default  [
     },
     {
         userName: "HBO",
-        userHandle: "hbo",
+        userHandle: "HBO",
         profilePic: "https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png",
         tweet: "",
         postDate: "12h",
