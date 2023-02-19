@@ -1,13 +1,13 @@
 
 var items = [
-    {name: "Home", icon: "fa-home", link: ".../home.html", active: true},
-    {name: "Explore", icon: "fa-hashtag", link: ".../explore.html", active: false},
-    {name: "Notifications", icon: "fa-bell", link: ".../notifications.html", active: false},
-    {name: "Messages", icon: "fa-envelope", link: ".../messages.html", active: false},
-    {name: "Bookmarks", icon: "fa-bookmark", link: ".../bookmarks.html", active: false},
-    {name: "Top Articles", icon: "fa-fire", link: ".../top_articles.html", active: false},
-    {name: "Profile", icon: "fa-user", link: ".../profile.html", active: false},
-    {name: "More", icon: "fa-ellipsis-h", link: ".../more.html", active: false}
+    {name: "Home", icon: "fa-home", link: "../HomeScreen/index.html", active: true},
+    {name: "Explore", icon: "fa-hashtag", link: "../explore_js/index.html", active: false},
+    {name: "Notifications", icon: "fa-bell", link: "../notifications.html", active: false},
+    {name: "Messages", icon: "fa-envelope", link: "../messages.html", active: false},
+    {name: "Bookmarks", icon: "fa-bookmark", link: "../bookmarks.html", active: false},
+    {name: "Top Articles", icon: "fa-fire", link: "../top_articles.html", active: false},
+    {name: "Profile", icon: "fa-user", link: "../profile.html", active: false},
+    {name: "More", icon: "fa-ellipsis-h", link: "../more.html", active: false}
 
 ];
 const GenerateNavItem = (item)=> {
