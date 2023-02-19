@@ -6,23 +6,23 @@ const postItem = (item) => {
              src="${item.profilePic}"
              width = "48px"
              height = "48px"/>
-        <p class = "inline float-start m-1"> ${item.userName}</p>
+        <p class = "inline float-start m-1 fw-bold"> ${item.userName}</p>
     <img class="float-start align-bottom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/1200px-Twitter_Verified_Badge.svg.png"
          height="20px"
          width="20pxs">
-        <p class="inline float-start m-1"
+        <p class="inline float-start m-1 wd-fg-color-grey-link"
             style="font-size:13px;"> @${item.userHandle} .  ${item.postDate}</p>
     <br></br>
 
     <p class = "float-start ms-5 mt-0"> ${item.postText}</p>
     <br></br>
-    <div class = "border-secondary bg-transparent card border-5 border-bottom  rounded-pill" >
-        <img class=" w-50 h-50 card-img float-start align-bottom rounded-4 border-4 border-white" src="${item.postImage}"
+    <div class = "border-secondary border-dashed bg-transparent" >
+        <img class=" w-100 h-40  float-start align-bottom rounded-4 border-4 border-white" src="${item.postImage}"
              >
 
     </div>
     <br></br><br>
-    <p class = " wd-margin-none wd-padding-all-around-12" style="font-size: 15px;"> ${item.postImageTitle} </p>
+    <p class = " wd-margin-none wd-padding-all-around-12 style="font-size: 15px;"> ${item.postImageTitle} </p>
     <p class = " wd-fg-color-grey-link wd-margin-none wd-padding-all-around-12 wd-pos-relative-nudge-up" style="font-size: 12px;">
        ${item.postImageText}</p>
 
@@ -59,10 +59,7 @@ const postItem = (item) => {
             </li>
         </ul>
     </div>
-
-
-
-
 </div>
     `)
 }
+export default postItem;
