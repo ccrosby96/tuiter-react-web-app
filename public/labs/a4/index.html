@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="index.css" rel="stylesheet"/>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bootstrap</h1>
+    <p>Welcome to Bootstrap!</p>
+    <!-- main content goes here -->
+    <h2><a href="https://getbootstrap.com/docs/5.1/layout/grid/">Grid system</a></h2>
+    <div class="row">
+        <div class="col bg-danger text-white">
+            <h3>Left half</h3></div>
+        <div class="col bg-primary text-white">
+            <h3>Right half</h3></div></div>
+    <div class="row">
+        <div class="col-4 bg-warning">
+            <h3>One thirds</h3></div>
+        <div class="col-8 bg-success text-white">
+            <h3>Two thirds</h3></div></div>
+    <div class="row">
+        <div class="col-2 bg-dark text-white">
+            <h3>Sidebar</h3></div>
+        <div class="col-8 bg-secondary text-white">
+            <h3>Main content</h3></div>
+        <div class="col-2 bg-info">
+            <h3>Sidebar</h3></div></div>
+
+    <h2>Responsive grid system</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-3 bg-warning">
+            <h3>Column A</h3>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 bg-primary text-white">
+            <h3>Column B</h3>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 bg-danger text-white">
+            <h3>Column C</h3>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 bg-success text-white">
+            <h3>Column D</h3>
+        </div>
+    </div>
+
+
+    <h2>Responsive grid system</h2>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+            <h4>1</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+            <h4>2</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+            <h4>3</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+            <h4>4</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+            <h4>5</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+            <h4>6</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+            <h4>7</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+            <h4>8</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+            <h4>9</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+            <h4>10</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+            <h4>11</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+            <h4>12</h4></div>
+    </div>
+
+
+    <h2>Hiding and showing responsive content</h2>
+    <div class="d-block d-sm-none fa-2x">XS</div>
+    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+    <div class="d-none d-xxl-block fa-2x">XXL</div>
+
+
+    <h2>Tables</h2>
+    <table class="table">
+        <thead>
+        <tr class="table-dark"><th>Quiz</th><th>Topic</th><th>Date</th><th>Grade</th></tr>
+        </thead>
+        <tbody>
+        <tr class="table-warning"><td>Q1</td><td>HTML</td><td>2/3/21</td><td>85</td></tr>
+        <tr class="table-danger"><td>Q2</td><td>CSS</td><td>2/10/21</td><td>90</td></tr>
+        <tr class="table-primary"><td>Q3</td><td>JavaScript</td><td>2/17/21</td><td>90</td></tr>
+        </tbody>
+        <tfoot>
+        <tr class="table-success"><td colspan="3">Average</td><td>90</td></tr>
+        </tfoot>
+    </table>
+
+
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/content/tables/#responsive-tables">
+            Responsive tables</a></h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr><th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+                <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+                <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+                <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+                <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/components/list-group/">
+            Favorite movies</a>
+    </h2>
+    <ul class="list-group">
+        <li class="list-group-item active">Aliens</li>
+        <li class="list-group-item">Terminator</li>
+        <li class="list-group-item">Blade Runner</li>
+        <li class="list-group-item">Lord of the Ring</li>
+        <li class="list-group-item disabled">Star Wars</li>
+    </ul>
+
+
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons">
+            Favorite books</a>
+    </h3>
+    <div class="list-group">
+        <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action active">
+            Dune</a>
+        <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action">
+            Lord of the Rings</a>
+        <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+            The Forever War</a>
+        <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
+            2001 A Space Odyssey</a>
+        <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ender's Game</a>
+    </div>
+
+
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/forms/form-control/">
+            Forms
+        </a>
+    </h2>
+    <div class="mb-3">
+        <label for="input1"
+               class="form-label">
+            Email address</label>
+        <input type="email"
+               class="form-control"
+               id="input1"
+               placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="textarea1"
+               class="form-label">
+            Example textarea</label>
+        <textarea class="form-control"
+                  id="textarea1"
+                  rows="3"></textarea>
+    </div>
+
+
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/forms/select/">
+            Dropdowns</a>
+    </h3>
+    <select class="form-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
+    </h3>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch1">
+        <label class="form-check-label" for="switch1">
+            Default switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch2"
+               checked>
+        <label class="form-check-label"
+               for="switch2">
+            Checked switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch3"
+               disabled>
+        <label class="form-check-label"
+               for="switch3">
+            Disabled switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch4"
+               checked disabled>
+        <label class="form-check-label"
+               for="switch4">
+            Disabled checked switch checkbox input</label>
+    </div>
+
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/forms/range/#steps">
+            Range
+        </a>
+    </h3>
+    <label for="range1"
+           class="form-label">
+        Example range</label>
+    <input type="range"
+           class="form-range"
+           min="0"
+           max="5"
+           step="0.5"
+           id="range1"/>
+
+
+    <h3><a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Addons</a></h3>
+    <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <span class="input-group-text">0.00</span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-text">$</span>
+        <span class="input-group-text">
+      0.00</span>
+    </div>
+
+
+    <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a></h3>
+    <div class="mb-3 row">
+        <label for="email1"
+               class="col-sm-2 col-form-label">
+            Email</label>
+        <div class="col-sm-10">
+            <input type="text"
+                   class="form-control"
+                   id="email1"
+                   value="email@example.com">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="password1"
+               class="col-sm-2 col-form-label">
+            Password</label>
+        <div class="col-sm-10">
+            <input type="password"
+                   class="form-control"
+                   id="password1">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="textarea1"
+               class="col-sm-2 col-form-label">
+            Bio</label>
+        <div class="col-sm-10">
+    <textarea class="form-control"
+              id="textarea1"
+              rows="3"></textarea>
+        </div>
+    </div>
+
+
+
+    <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a>
+    </h3>
+    <form>
+        <div class="row mb-3">
+            <label for="r1" class="col-sm-2 col-form-label">
+                Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control"
+                       id="r1"/>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="r2" class="col-sm-2 col-form-label">
+                Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control"
+                       id="r2"/>
+            </div>
+        </div>
+        <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">
+                Radios</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"
+                           name="gridRadios" id="r3"
+                           value="option1" checked/>
+                    <label class="form-check-label" for="r3">
+                        First radio</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"
+                           name="gridRadios" id="r4"
+                           value="option2"/>
+                    <label class="form-check-label" for="r4">
+                        Second radio</label>
+                </div>
+                <div class="form-check disabled">
+                    <input class="form-check-input"
+                           type="radio"
+                           name="gridRadios" id="r5"
+                           value="option3" disabled/>
+                    <label class="form-check-label" for="r5">
+                        Third disabled radio</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox" id="r6"/>
+                    <label class="form-check-label" for="r6">
+                        Example checkbox</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+    <h3>Overriding Bootstrap style</h3>
+    <button class="btn btn-primary">
+        Regular Bootstrap Button
+    </button>
+    <br/>
+    <button class="btn btn-primary override-bs">
+        Overriden Button
+    </button>
+
+    <h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul>
+
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/#pills">
+            Pills
+        </a>
+    </h3>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul>
+
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/components/card/">
+            Cards
+        </a>
+    </h2>
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgSEhUZGBgYGBgYEhgYGBISEhIYGBQZGRgVGBgcIS4lHCErHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQkJSE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNTQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xAA9EAACAQMCAwUGBAUDBAMBAAABAgADBBEhMQUSQQYiUWFxEzKBkaGxFFLB0SNCYvDxcoLhBzNDsiSi0hX/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAJREAAwEAAgIBBAIDAAAAAAAAAAECEQMhEjFBBDJRYROBFCJC/9oADAMBAAIRAxEAPwDD3NyRsYB//RcHTWNBZ2wJoOG8ByM4kSsNaelPQq1HOoMvLNDjWXFPgwUbQetR5YURI1Z0CcWdEgocBJ6A1kSye3GsBmh4eNJbJKqw2hd7drSQ1H22A01PgJQieqwAyTgDcnQSjvOOUlPKp5jvpnlx4822JT3fG/atlgxGRyoCgHrjBOfP7Sk45dryYQFS/vMSzMQMd0a7ny2+MyrjVPs1VuV0TcQ7TsWK8+Bk6DJwPTT6/SVVS9eppzZHXOMHzxr8syrxjULnz1kf4wjTlwPFT9x/iaTKSxEVTfssULE8oc+QOSPTH7Syp3DUyPNdRvv4Sgo3xBGucbH49YQtfPUkZyviuemP0g0JPPRs+D8fC/wydM6HoB4EHw+310C8VydOVvEA4bboD18t/WeWVbkDqPUafOcTijKRqdNiN8TnvgVdo3nmzpnsVtcK6hgc5/wYQEBmD4BxssHYa8oD1FGc74dlHpg8v6zY214GAYbEAgjYg7EThuHDw6Zapags2inpBLjg6NuoljSqAybMgesxl92bxrTOPKUlelVpHUH16T0mqBKi/oAjUStKVGQtuMuu5l1adoR1MquIcOXcDEp6lFljxMpo9FtuOKess6PEVbYzyVLhl6mF0eLuvWLwJco9XFwDI3cTAW3aJhuZZ0ePg7yXLF4l3dqDKC+oiFHiSt1gtxVzEaSsKW4p4gjCWdYZgTpKTKwHik3JFDQwo+A0gxE9I4ZTVVGZ5bwG6KnM2dtxXA1M9w8TTU3BXEz3EMZ0kVXi+RvKyvxDJ3ksEFqY4QOlXzCkeQUSrCbcawVWhVsdYDNDY7TL9u7tw6pzYAUELrqS2M+ssOKcY/DqoA1bJJ35QP1J+xnn/FeKNVcl3ZvAnVvPpjHylpEtjkuDy5JKjTnI95h0Uesge4525m6aKPADoPH/AJJ8YE1TOnTwGcepJ3kiOBuOY/HlHkPGDBEles4G+PQkARltYvVPdUk/DXSaLgnAXrkM45V6+k9C4bwelTXlCj95m7S6RquNvtnlC9n62PcO3z0k9DgFbGeRvkZ7Ktqhx3R9ISlqv5R8oeTY/BI8godkqrAnBG+M/rB+Jdk7hELBC4XJyupwBqcbn/ie0GkANoNVWDpor+NM8R4NxH2HfGucjxBHgfLSbbsVdFqPIx2LFRnXlJ0A8hBe1/ZVeY3NIYzrVUbf61HTz+fjIOA36U8UwChOhOeZW9czLkmbltewinNYzXvdFDJ6HGEOhOJV3r6ZlFcVCDPPw7vFM3Ru1I0MDuKwMxtO+ddiZa2VStUHdQt5gaRZgJYEXODKytbZlhUpuvvoR6icVMxaWiiq2sBq0MTTVaMrrmhKVA5KTEkp1CJI6Qmxs+Y5bbp5ynSwWE1sWONDDwjjcGWXC7EAc+/h5SwdAdxIY/LDOlZG1OWd5bhdRtAzJLXYL7OKT4igM87sdAMQ9mY9ZFbW+BJMz3KZ4coTVWHWQG5IMmqbSuq5zFPY6WF3Z3UtqNaZO2qYMtreoY6RKZfpUh9oddZRUK8Nq3YWk7k7IftpIwZTccvGd21JBJ5QcZCg4AGugwMyg5CTk6ePT4ecMe71zkk4325d9vPJ36Svq1Sx6abft/essljy/wCXbxOn0l72c4G9VwzZ5RrkjAgPB7cMcvsPixPgPCei8IqqQAmAB0Gki31iNeOe9ZbWtBUUKssqOsrlQj+/tC6ROZgmdLLOiITtAabwxBmaozY5jBqqydh/esaUz/iNrQRXXCAjlODkYI3zPM+McK/D18LornKb431X1E9VrUen23MyvbKz5qDP/NTIfx0HvA/DX4TPtMdJMpzdYUKTsIKaZfaPW25uVv5WAb5jOIdSwJ59PWdqXRP2e4Aaz9/3V1bz8p6XbWaIoVVAAmf7HMOU+OZqJJzctPywguLJGGComI4zYCi+F91tvKb8GY3tjVHOijfBJiY+Gn5YULyvutoUzwW4MR2FVUGstLYgGVlTeFW9cHQ7yhGo4a+Vx4QqovWZ63uiuoaTVOMsdABDSXL0Nv2AQ5+EpueKvcM5yx+HSRyWXKwkzFI4oFFRcWfKsq1SXfFbkdJRq+TpPao8aDlVIDcJLNl8YBctJnR20DUEyYfkgRtjThdzT00lv2ZAf43B3hP4wOjIeoI+koqykE5nKdTllYTpNVfp/fpGJTyZ2oc94QqxTMT6KS0JtFxjOnhNbwS4Awq/5mWtqXOwHTIHrN/wrhyUwMb4GTMro345L2g2QIYiZlalTEKS6QasZmjRhaHG4hyVRjPhvM9c9pKa6IM48evpAafbNM4dPlkS08FjNi1YYnHrgYlDQ46lX3NM9OvrJL+uVTmj0akJ4txZKKGo5BOyL1Y9Jm6VCq4epUJ5XBVkOdnGC2Om86yIzB7hxzY7i6tyDfYak+mvpIeG3yu5FGqzpnDBgBynOMDAGkTYkuwK3HJbIG3GR/8AcxqvIOK3GvsuiO//ALnH0lebspvOR8LbbOhcqSw1fBuL+xfX3Tv5Tb2vGqTjIcfMTxK64m2MLpBbesfE/OV/jNrfRhXJNVh7fxPtLQpKe+GboqnJP7TA3N+1ZzUfc9OgHQCUFuZaUNpy3PidXFKXoK5pBWMkzIapkG4FUkQktSMEpEk9IQtEgtKG05LKQ7kiZZIJxhJAhxFH4igMwtzf8x0h1immTKK331l/SrALPovHTwFWDLtsSnqvkybiV1nQStzFmA60urGpiH1XGJmkuSIfSuubAktDTIr5OsrzLqpR5hK6tb4jTFgy2Ocr5aDc58PrLZLCtS/7tN0ztzqVzkecrOH1PZ1Uc/yup8tDv8N5vqVzUrIFrKHAYrp7w682pwRM+SvH+zfh4/JN76M7bd0qfPP1E9BtHygPlMLf0wrDl26fOa3hDnkU+XzmNPVptCxtFux6yquuZ2wNidesuaQB3j7nhCsPAH3uhI8JK7KfRSrxSgh9mlIVX8Bg6/1Hp9ZUXd1VqVWpJbU05RluRFY4IGuT72/gP22Ntwdaf/ZGB1GEI9RkSxpWr9cDyBBY49NB9ZspWdkN96mYHgvC69GqGqrhdxrnfUen3noFe3WtS5RpscjBOhzp8pziVAKASdcYMF4VeYY0+n2iSx4Wu1oJZWlNOfJZi2hZhsOq5GSBO8F4RTp59muFB0J3cn4DQaYl4aSFiGGvQ7HHnFWUKMCD6WENa9+TzvtRb8lw3gwDD7H6g/OUN2RiantzUGEc9Cy+uQD+kw9evzGOcwzrUzlWOt4M7yW3eaP7TOfuLm2lnSOkp7erLCnU0nk8y7PV4/QbzyKq8GetBnuZkp00bwmZpwQI3EctaX4MnyLKkYahlRRqw+lVmbRaYcGjS8FevIGuosGWHNOSu/EzsfixaY00SpzO1LjA0h9yoxKO4bXE+h9I8D5GO+dZwmcikgcMM4cMtBIbw0akxMEX1GnpAbymISlXSQ7mBa7Kp0my7PVzUosgOGUBT0JHLgN8tPUGZ97brp9JLwa9NCqHzoe646Y/4mdryk14m4rX6ZYWPDXbmydFJ5B9/TcS/sahVQBtgY+UlpIM84HLzHTXmQrvkYnUGDp/ic79YdbST1FjZXXX6S+oXSkYMyqJyvkdekJSoR1xEngOUzTJVToIdSrZ2mZtrr+/GXFF9MzSaIqQTjtchlQaljr6SqB5HyXAz/eJYcTps4PsyOcYPezg76eW88/v+F3VOqXZ2JLd0KS6/wCnB0HylfI5eI9MfiCEKynXIX1zpiSrXD56EbjqJk+BW7Ow5yQBhmUajIIwM+s1FZATzDcb+cK19g0kYbt/nlTyf7o0xDNPQO2Sc9PPhUX/ANGEwV1TxrJn2RXrQJ3j6VXEEqNGc86Eujjbxl7QuIfTuJmaFQ5lzbPkTk5+L5O76fl3ph1StK6vXxCam0r60y45WnRzNpdEiVpIlWBqJOqzSpRjNMsaNWHU6kqKEPQ6TmuVp1T6J61WBNWMdUaDLvCZQ2yf2pijOWdjxDwq7m6AXzlSTmdqOTGZnrt6eCOinMxRAdlnYJpKxd5c2C92JjRIYRZJmQusnsmk0bca7Cq9MYlVVpay3YwSpTkJmlTpc8B44iKKNfQD3H6KD/KZYreI7E02DAHAKnI2zMa9EEHfML4BTdHZf5X1/wBwiqNWoc201LNshyAeslxmV1tcdIclTb6+MwOhD0blMvrKorAa/v8AKU6KDvClcouV1wdQJUkUWbugbB/vMrb3j9tS7rEOx05VwZmr/wDE1GfPNTTOML3qjD12UHXoZHwy+ShooUeqAsT5k6kzVMJS/wCmaGlxocn/AMe2Y82c5UqNOvMQB9ZEvaAg8tWmUOQM+8hznTIzj4xgubipquAu4BGCdMdNoTbDlPK4HM22fd06esG8HTlrpFd2rGaK/wBTqfo0w19S0m77QUXemWGP4ZBdRvyklQ48gdD6zHXKZkfaZNajJVRgxIMwy/oa6RWlCbqlmnK5flh22oay4pUsRttQxDlTMxutOninxIKqaQF6JmiW0yIO9ricnn4s9GZVLsoCuI/MIvKeDBCZqn5LTGp8HgTRaF80r0aT+1kVPY5tYOr1JAlQSO4qQVKms0nj/wBTG+bKLX2kUC9rFJ/iL/nKZ4yPMWJ6B5QydjsThEAH0Bky84cuRiUlsdZd8LfWJjQaaGZHTokHSWy0xjM4lMZkM0l4CJSY6AZJkj8PfwB8gcmXXDUXLeOB9/8AEISlrmNTpTvDMGhjeFcMtyzHH8iu7eSopJ/b4w3iqAN6gE+sk7GOjXL0m/nouuPHVM/SbzOLDOq16QVH2YHQ/rJqNzjXMVThz0AKNTUJlUbo6A91vXGAR0MBcFD/AEmcNR3h1zXWlv8AiWxkZMLsOMHPLjPj4SptbrG2DDPxqjVVx8IvFofkmXNxTLnmxjPU/tHLYoAGKjpkkd4nygNvxdRqfD+9TCK10jocnI667eWJSli8g9KyjTHx3+UeaqnpoOv6yrtquhABx466yC74iqMlPGWcjTqqjOWM08euxOt6Qbw3+PXemuCrU6iMemOUjX/cVmFrVMM1OoOV0ZkdT+ZSQR8xPU+y/BFt0crnmqNzYP8A41OoQfc+vlMV277MXP4upXoUmqJUBqHkGShVQHyPMjIxvnSbvgTlb7OauZzXRkK9DJ3EfbUQNyPnIUrBh4+BkVRSNjEuOUsJfJTelyoXowhFuFz7w+czIqmL2zTOuBP5Lnna+D0O2pqRoQfQgyG5oYmFp3TrsSPQkQtOKVPzt8Tmc1fRv4Z1R9cl7RNxQ4MqmeGvdc3vYPqJEzL+Qfaax9O5WaRyfVqn6ZAjwjmkTsvRcRhaFcTXZMcqfRysYE28JZoM5lSibejvaxSHMUrEZeTGCOjRHSyBCcaczEYAcRsGWnC6nelTDeHvhomBrqdfAgdTiAU7wb2+kqLsktEpK009Hi/IQw18R4iHpx9Md1TnzwBML7QjrJKV1iVPTE3pp7m+5ssx1Mb2Mq5v0OcYR8efd2+5+Ezwui5wNtzJOG3xoXCVvyOC3mp0YfImaeXaJZ7fc0kqggqG/Mp+48JnL7gJOfZkEfkfQj0Yby4/FLoynRgGVumCMg+kINUN7w+Il1xzXsc259HnHEeG16Pe5G5fHfHxGkGt+JsNxkees9LalnY/I4Mz/EuA0yeZkK/108IR/qTHKfUATGuBr7WarlT+4q7S8R91IPlqJa06iDr6aamD2fZ/8lVGH9Qam30zCbiyq0BzvT7mg51KOgzsDynK/HEnxqVrRac16YT7RRqdABk56Dr6Sq7O25ubs1yO4hyPPAwo/WV3FOIGowt6RyWOHI+ePQbmbzszw/2dMU6a50BdjouvQfmO/lHwy7ra9IfLSicXtmmtTheY7kn0nPxJz3dYqFtle8dNcAdZJTpa+U7m1rOA8s/6k9ljRY31uuEdv46D/wAbsffA/Kx38D66YSndKdG0+0+krmijo1NwGR1Kup2KsMET597X9nmtKzIO8mf4beIOoz/fQzCpftFp/BX1E6iRiCrUK7H9pIlfxEy0eE4ER0iVwY19SB8TGMkQHGYsxyE+EY4wYAIyPxHhtH5jM6/CJrQTxkDNIHaSVRg4kDGZpYW605mKNzFHgtHCOjY4RiGmITjTqwARj6L4MYZwQAsVrzranMBUwpHjQDay6SKnSZzhR+w9Ybb2xqHwUbn9BDXVEHKg9fE+ZjU6S2BCmFXlH+4+JkDpmEE5kRQxtAjbdiuJs6fhm1amD7PxKb488ZPwE1VMke7p5bqfh0+E8nsbp6TrUQ4dDlT+h8jPZeDul3RWvTGeYd4bFWGjL54M243qz8AyNKv5lI8x3l+mv0kyVPA/36Sb8OVOoM49qrdPjqDNcJ0l4dwunWLe0XGAMFMIcnO+mssD2aTBUVXwwIKtyMpB3VhjWO4avLTARQD1bdm1OpM61O4J0cDywD9zIc/sPIA7O9i6FmzujM7Me6zhSUX8g/feaUU16aSvRaiLzO+cEYAAUHXBJ+BMY14dxvn9Yph5iFVa9Yc1RB3fCRvcAeUpeJ8VQPy82uNcDmx5HUayvW6R2w9VxnxAVfTSaKF8k+RoalwD1lR2h4Kl3QZCO8NUP6Z8Dj7Qm2oUk3Y59Mn56y1oFdVXY6g+IP7GOsSA+cOJcOai5puCME7jGx+8ExPau3fZkVkNSmvfUZIA1cDqP6h9RPH7m1ZGKOpUjoRg4IyDOW5ztejSa0HUSdD4SMRyySglKx2EZUOZxG8I81NeXpj6wAgjG3EfUXEjf9YAMuV0zATLFxmAMmsmvY0MijuWKToxTsRnIxHGnFMRjYAOJiUxseoJOAMnoBuYASLLCysS/efRPq3p+8kseG8vfq/Bf/1+0Jr3OdBLU/klsdVrBRyqAANhAmckxMcxKusbENBnY4iNMQDHbE1P/T7tAbeuKTNhKpA1OiPsp+Oi/KZKs2uIxf76Qmmq1DzUfTdGsrjUA+usTWiHXGPTSY3sJx/8TQAY/wAWlhani4x3anxA18wZrXvFVeZs/CdTW9yZ/pjuGoCNOjMPTvGG1aqICSQMbn9zM/Y3DFmKEgE5H2Onwkt4hcdT5eJjca+2G4C3t7WuO7bAhdmfQE+QzsIVbcIrkfxKh9F5VPzUSKxptb8jsdHOKg6Ln3T8NZp5FU59CS32Zi77MgnmVjrvrnXxyYyj2YAOSc+p0+QE1UaZK5GVhV0uFqDljny2HyhVeljlYfynUDTuncfr8JMxjjtB1T7YYNKgieb/APUTsxzr7emveXcDqNyv3I88jrPRqOmVPTb0jbugHUqRkEYMS/DH+z5kcGJZqe2fAjbViQO45JXwB3OPXf5jpM0VmVTjKT0SpHsMeMSxxMBnGGR6QZoUkhrJACMmQ1V6x+cgTmekT7CeiDEUfyxSDQHnDFFGQcMbFFACWhRLsFXc/CX1rbLSGmrdSfsPCdilySyKtWJkOZyKNiOxJ4xRRAdMa7YGYooMAOdiikllv2Z4y1pcJXGSo7tVR/PTPvD1GAR5gT3jkV1BGqsAR00IyPvFFOjhbxmVewq2sUC4XT4a/HxhlG3A2Gvid4ooU2CI7q0DqVOx+h8RJLJsoAd17p+E5FB+g+RtC8VmKDPMueYY0XBxjPWExRTNFETRwMUUv4EMqaYbwOD6GSRRRP0BnO2XBVuKDDYgEqfDr9N/mOs8Mq0yGZTuCQfUHBiihXwNDQIoopBQpJQtmqulJBzOxAUZC5ztqdBOxQXsT9Fh2t7MGxakhbmLoWfbCOpHOo8V7wx8ZnHEUULWMJOKZ2KKZYjTWf/Z"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+                Some quick example text to build on the card
+                title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <h2>Simple icons</h2>
+    <i class="fa fa-cog"></i>
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-share"></i>
+    <i class="fa fa-comment"></i><br/>
+    <i class="fa fa-image"></i>
+    <i class="fa fa-chart-bar"></i>
+    <i class="fa fa-calendar"></i>
+    <i class="fa fa-smile"></i>
+
+    <h2>Resizing icons</h2>
+    <i class="fa fa-cog fa-2x"></i>
+    <i class="fa fa-heart fa-2x"></i>
+    <i class="fa fa-share fa-3x"></i>
+    <i class="fa fa-comment fa-3x"></i><br/>
+    <i class="fa fa-image fa-3x"></i>
+    <i class="fa fa-chart-bar fa-4x"></i>
+    <i class="fa fa-calendar" style="font-size: 5em"></i>
+    <i class="fa fa-smile" style="font-size: 3.5em"></i>
+
+
+    <h2>Coloring icons</h2>
+    <i class="fa fa-cog fa-2x" style="color: tomato"></i>
+    <i class="fa fa-heart fa-2x" style="color: tomato"></i>
+    <i class="fa fa-share fa-3x" style="color: #5ec15b"></i><br/>
+    <i class="fa fa-comment fa-3x" style="color: #19d49e"></i>
+    <i class="fa fa-image fa-3x" style="color: rgb(234,123,12)"></i>
+    <i class="fa fa-chart-bar fa-4x" style="color: rgb(123,234,123)"></i>
+
+
+    <h2>Brand icons</h2>
+    <i class="fab fa-twitter fa-2x"></i><br/>
+    <i class="fab fa-facebook fa-2x"></i><br/>
+    <i class="fab fa-apple fa-2x"></i><br/>
+
+
+    <h2>Stacking icons</h2>
+    <span class="fa-stack fa-2x">
+      <i class="fas fa-square fa-stack-2x"></i>
+      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span><br/>
+    <span class="fa-stack fa-2x">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+      </span><br/>
+    <span class="fa-stack fa-2x">
+      <i class="fas fa-camera fa-stack-1x"></i>
+      <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+      </span><br/>
+
+    <h2>Rotating icons</h2>
+    <div class="fa-4x">
+        <i class="fas fa-snowboarding"></i>
+        <i class="fas fa-snowboarding fa-rotate-90"></i>
+        <i class="fas fa-snowboarding fa-rotate-180"></i><br/>
+        <i class="fas fa-snowboarding fa-rotate-270"></i>
+        <i class="fas fa-snowboarding fa-flip-horizontal"></i>
+        <i class="fas fa-snowboarding fa-flip-vertical"></i><br/>
+        <i class="fas fa-snowboarding fa-flip-both"></i><br/>
+    </div>
+
+
+    <h2>Animating icons</h2>
+    <div class="fa-3x">
+        <i class="fas fa-spinner fa-spin"></i>
+        <i class="fas fa-circle-notch fa-spin"></i>
+        <i class="fas fa-sync fa-spin"></i><br/>
+        <i class="fas fa-cog fa-spin"></i>
+        <i class="fas fa-spinner fa-pulse"></i>
+        <i class="fas fa-stroopwafel fa-spin"></i>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
