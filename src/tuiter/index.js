@@ -5,7 +5,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import PostSummaryList from "./post-summary-list";
 import ExploreComponent from "./explore";
-import Question from "./question/question";
+
 import {Routes,Route} from "react-router"
 import HomeComponent from "./home";
 
