@@ -1,5 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {unlikeTuit, likeTuit} from "./tuits-reducer";
+import {useDispatch} from "react-redux";
 
 const TuitStats = (
     {
@@ -19,14 +21,32 @@ const TuitStats = (
         }
     }
 ) => {
+    const dispatch = useDispatch()
+    const likeTuitHandler = (tuit) => {
+        dispatch(likeTuit(tuit))
+    }
+
+    const unlikeTuitHandler = (tuit) => {
+        dispatch(unlikeTuit(tuit))
+    }
     return(
             <div className= "row">
                 <div className= "col" >
                     <FontAwesomeIcon icon= "comment" /> {post.replies}
                 </div>
-                <div className= "col" >
-                <FontAwesomeIcon icon= "heart" /> {post.likes}
-                </div>
+
+                {post.liked ?
+                    <div className="col">
+                        <FontAwesomeIcon onClick={() => unlikeTuitHandler(post)} icon="heart"> </FontAwesomeIcon>
+                        {post.likes}
+                    </div>
+                    :
+                    <div className="col">
+                        <FontAwesomeIcon onClick={() => likeTuitHandler(post)} icon="heart" style={{color: "#e421dd",}}></FontAwesomeIcon>
+                        {post.likes}
+                    </div>
+                }
+
                 <div className= "col" >
                     <FontAwesomeIcon icon= "retweet" /> {post.retuits}
                 </div>
