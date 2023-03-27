@@ -4,17 +4,18 @@ import PostItemBasic from "./post-item-basic";
 import postsArray from "../post-summary-list/posts.json";
 import PostSummaryItem from "../post-summary-list/post-summary-item";
 import React from "react";
+import TuitSummaryList from "../tuits";
+import whatsHappening from "./whats-happening";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
     return(
 
-        posts.map((post, i)  => {
-            return(
-                <div key={i} className="border-secondary border-bottom pb-4 pt-3">
-                    {PostItemBasic(post)}
-                </div>);
-        })
+       <>
+           <WhatsHappening/>
 
+           <TuitSummaryList/>
+       </>
     );
 }
 export default HomeComponent;

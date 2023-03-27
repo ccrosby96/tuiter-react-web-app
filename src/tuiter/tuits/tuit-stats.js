@@ -1,12 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAtom } from '@fortawesome/free-solid-svg-icons'
-import TuitStats from "./tuit-stats";
-import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
 
-
-const TuitItem = (
+const TuitStats = (
     {
         post = {
             "_id": 234,
@@ -24,32 +19,25 @@ const TuitItem = (
         }
     }
 ) => {
-    const dispatch = useDispatch();
-    const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
-    }
-
     return(
-        <li className="list-group-item">
+            <div className= "row">
+                <div className= "col" >
+                    <FontAwesomeIcon icon= "comment" /> {post.replies}
+                </div>
+                <div className= "col" >
+                <FontAwesomeIcon icon= "heart" /> {post.likes}
+                </div>
+                <div className= "col" >
+                    <FontAwesomeIcon icon= "retweet" /> {post.retuits}
+                </div>
+                <div className= "col" >
+                    <FontAwesomeIcon icon= "share" />
+                </div>
 
-            <div className="row">
-                <div className="col-10">
-                    <i className="bi bi-x-lg float-end"
-                       onClick={() => deleteTuitHandler(post._id)}></i>
-                    <div>{post.userName} . {post.time}</div>
-                    <div className="fw-bolder">{post.topic}</div>
-                    <div>{post.title}</div>
-                </div>
-                <div className="col-2">
-                    <img width={70} className="float-end rounded-3" src={post.image}/>
-                </div>
             </div>
-            <TuitStats post={post}/>
-        </li>
 
 
 
     );
 };
-export default TuitItem;
-
+export default TuitStats;
