@@ -5,14 +5,21 @@ import {findTuitsThunk} from "../../services/tuits-thunks";
 
 
 const TuitSummaryList = () => {
+
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
     const dispatch = useDispatch();
+    console.log(dispatch)
+    console.log(findTuitsThunk)
+    dispatch(findTuitsThunk())
+
     useEffect(() => {
+        console.log("Hello")
         dispatch(findTuitsThunk())
     }, [])
 
-    const postsArray = useSelector(state => state.tuits)
+
+    //const postsArray = useSelector(state => state.tuits)
     return(
         <ul className="list-group">
             {
@@ -23,7 +30,7 @@ const TuitSummaryList = () => {
             }
 
             {
-                postsArray.map(post =>
+                tuits.map(post =>
                     <TuitItem
                         key={post._id}
                         post={post}
