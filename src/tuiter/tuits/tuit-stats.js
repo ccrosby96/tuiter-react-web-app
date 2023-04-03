@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {unlikeTuit, likeTuit} from "./tuits-reducer";
 import {useDispatch} from "react-redux";
 
+import {updateTuitThunk} from "../../services/tuits-thunks";
+
 const TuitStats = (
     {
         post = {
@@ -37,12 +39,20 @@ const TuitStats = (
 
                 {post.liked ?
                     <div className="col">
-                        <FontAwesomeIcon onClick={() => unlikeTuitHandler(post)} icon="heart"> </FontAwesomeIcon>
+                        <FontAwesomeIcon onClick={() =>
+                            dispatch(updateTuitThunk({
+                                ...post,
+                                liked: false,
+                                likes: post.likes - 1}))} icon="heart"> </FontAwesomeIcon>
                         {post.likes}
                     </div>
                     :
                     <div className="col">
-                        <FontAwesomeIcon onClick={() => likeTuitHandler(post)} icon="heart" style={{color: "#e421dd",}}></FontAwesomeIcon>
+                        <FontAwesomeIcon onClick={() =>
+                            dispatch(updateTuitThunk({
+                                ...post,
+                                liked: true,
+                                likes: post.likes + 1}))} icon="heart" style={{color: "#e421dd",}}></FontAwesomeIcon>
                         {post.likes}
                     </div>
                 }

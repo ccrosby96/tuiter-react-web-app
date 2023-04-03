@@ -1,0 +1,10 @@
+.wd-liked {
+    fill: deeppink;
+    color: deeppink;
+}
+
+.wd-nudge-profile-up {
+    position: relative;
+    margin-top: -1000px;
+    top: -150px;
+}
