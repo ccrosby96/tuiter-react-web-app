@@ -13,6 +13,7 @@ import HomeComponent from "./home";
 import ProfileComponent from "./profile";
 import profileReducer from "./reducers/profile-reducer";
 import EditProfileComponent from "./edit-profile";
+import TuitSummaryList from "./tuits";
 
 const store = configureStore(
     {reducer: {who: whoReducer, tuitsData: tuitsReducer, profile: profileReducer}});
@@ -27,7 +28,7 @@ function Tuiter() {
             <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                  style={{"position": "relative"}}>
                 <Routes>
-                    <Route path = "home" element = {<HomeComponent/>}/>
+                    <Route path = "home" element = {<TuitSummaryList/>}/>
                     <Route path = "explore" element={<ExploreComponent/>}/>
                     <Route path = "profile" element = {<ProfileComponent/>}/>
                     <Route path = "edit-profile" element = {<EditProfileComponent/>}/>
