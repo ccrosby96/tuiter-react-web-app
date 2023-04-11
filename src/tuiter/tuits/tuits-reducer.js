@@ -29,7 +29,7 @@ const initialState = {
 
 const tuitsSlice = createSlice({
     name: 'tuits',
-    initialState: tuits,
+    initialState,
     extraReducers: {
         [findTuitsThunk.pending]:
             (state) => {
@@ -72,32 +72,7 @@ const tuitsSlice = createSlice({
 
 
     },
-    reducers: {
-        deleteTuit(state, action) {
-            const index = state
-                .findIndex(tuit =>
-                    tuit._id === action.payload);
-            state.splice(index, 1);
-        },
-
-        createTuit(state, action) {
-            state.unshift({
-                ...action.payload,
-                ...templateTuit,
-                _id: (new Date()).getTime(),
-            })
-        },
-        likeTuit(state, action) {
-            const tuitIndex = state.findIndex((tuit) => tuit._id === action.payload._id)
-            state[tuitIndex].liked = true;
-            state[tuitIndex].likes += 1;
-        },
-        unlikeTuit(state, action) {
-            const tuitIndex = state.findIndex((tuit) => tuit._id === action.payload._id)
-            state[tuitIndex].liked = false;
-            state[tuitIndex].likes -= 1;
-        }
-    }
+    reducers: {}
 
 });
 export const {createTuit, deleteTuit, likeTuit, unlikeTuit} = tuitsSlice.actions;
