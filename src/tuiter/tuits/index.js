@@ -12,15 +12,19 @@ const TuitSummaryList = () => {
     const dispatch = useDispatch();
     console.log(dispatch);
     console.log(findTuitsThunk);
-    dispatch(findTuitsThunk())
+    //dispatch(findTuitsThunk())
+    const fetchTuits = async () => {
+        await dispatch(findTuitsThunk())
+    }
 
     useEffect(() => {
-        dispatch(findTuitsThunk())
+        fetchTuits();
     }, [])
 
 
     //const postsArray = useSelector(state => state.tuits)
     return(
+        <>
         <ul className="list-group">
             {
                 loading &&
@@ -30,7 +34,7 @@ const TuitSummaryList = () => {
             }
 
             {
-                tuits.map(post =>
+                tuits && tuits.map(post =>
                     <TuitItem
                         key={post._id}
                         post={post}
@@ -38,6 +42,7 @@ const TuitSummaryList = () => {
                 )
             }
         </ul>
+        </>
     );
 };
 export default TuitSummaryList;
