@@ -45,9 +45,7 @@ const TuitSummaryList = () => {
                 )
             }
         </ul>
-            <pre>
-                {JSON.stringify(tuits, null, 2)}
-            </pre>
+
 </>
             );
 };
