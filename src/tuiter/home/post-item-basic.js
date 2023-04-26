@@ -21,7 +21,7 @@ const PostItemRegular = (
     return(
         <>
             <PostItemBody post={post}/>
-            <PostItemIcons post={post}/>
+
         </>
 
     );
